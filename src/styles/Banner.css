@@ -1,4 +1,4 @@
-/*
+
 .my-banner {
 	margin: 45px 65px 50px 65px;
 	display: flex;
@@ -9,6 +9,7 @@
 nav{
 	display: flex;
 	justify-content: space-around;
+	gap: 20px;
 }
 
 p{
@@ -28,4 +29,3 @@ p{
 	height: 68px;
 	width: 210px;
 }
-*/
