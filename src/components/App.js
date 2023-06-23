@@ -1,4 +1,4 @@
-
+/*
 import Banner from './Banner'
 
 function App() {
@@ -7,3 +7,4 @@ function App() {
 
 export default App
 
+*/

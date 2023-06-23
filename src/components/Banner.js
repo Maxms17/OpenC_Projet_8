@@ -1,14 +1,20 @@
-import logo from '../assets/LOGO.jpg'
+/*import logo from '../assets/LOGO.jpg'
 import '../styles/Banner.css'
 
 function Banner() {
-    const title = 'Le projet 8 React'
+    const pageUn = 'Accueil'
+    const pageDeux = 'A Propos'
+    
     return (
-        <div className='titre-banner'>
-            <img src={logo} alt='Kasa' className='titre-logo' />
-            <h1 className='titre-title'>{title}</h1>
+        <div className='my-banner'>
+            <img src={logo} alt='Kasa' className='my-logo' />
+            <nav>
+                <p className='my-page'>{pageUn}</p>
+                <p className='my-page'>{pageDeux}</p>
+            </nav>
         </div>
     )
 }
 
 export default Banner
+*/
