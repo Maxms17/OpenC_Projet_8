@@ -1,16 +1,16 @@
 import { Link } from 'react-router-dom'
 import logo from '../../assets/LOGO.jpg'
-import '../../styles/Banner.css'
+import './Header.css'
 
 function Header() {
     return (
-        <div className='my-banner'>
+        <div className='my-header'>
             <img src={logo} alt='Kasa' className='my-logo' />
             <nav>
                 <Link to="/pages/Home">Accueil</Link>
-                <Link to="/pages/Logement">Logement</Link>
-                <Link to="/pages/Propos">Propos</Link>
-                <Link to="/pages/Erreur">Erreur</Link>
+                <Link to="/pages/Propos">Propos</Link> 
+                {/* <Link to="/pages/Logement">Logement</Link> */}
+                {/* <Link to="/pages/Erreur">Erreur</Link> */}
             </nav>
         </div>
     )
