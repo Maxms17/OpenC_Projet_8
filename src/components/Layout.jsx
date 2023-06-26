@@ -3,12 +3,13 @@ import React from "react";
 import Header from "./Header/Header";
 import Footer from "./Footer/Footer";
 
-
-function Layout (children){
+function Layout ({children}){
     return ( 
         <>
         <Header />
-        {children}
+        <main>
+            {children}
+        </main>
         <Footer />
        </>
     )

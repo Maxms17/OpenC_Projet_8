@@ -1,5 +1,12 @@
+import React from "react"
+import Layout from "../../components/Layout"
+
 function Logement() {
-    return <div>Page logement</div>
+    return (
+        <Layout>
+            <p>Page Logement</p>
+        </Layout>
+    )
 }
 
 export default Logement
