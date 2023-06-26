@@ -11,18 +11,16 @@ import Header from './components/Header/Header.jsx'
 import Body from './components/Body/Body.jsx'
 import Footer from './components/Footer/Footer.jsx'
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/" element={<Logement />} />
-        <Route path="/" element={<Propos />} />
-        <Route path="/" element={<Erreur />} />
-      </Routes>
-      <Body />
-      <Footer />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/logement" element={<Logement />} />
+          <Route path="/propos" element={<Propos />} />
+          <Route path="*" element={<Erreur />} />
+        </Routes>
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
