@@ -10,7 +10,6 @@
 }
 
 .my-Img_Accueil {
-	z-index: 1;
 	width: 70%;
 	border-radius: 25px;
 }
@@ -18,7 +17,6 @@
 .my-ImageTitle p {
 	height: -250px;
 	width: 70%;
-	z-index: 2;
 	color: #000;
 
 	font-size: 48px;

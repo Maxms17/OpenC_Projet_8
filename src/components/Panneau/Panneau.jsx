@@ -1,10 +1,11 @@
 
 import './Panneau.css'
+import Img_Propos from '../../assets/Img_Accueil.jpg'
 
 function Panneau() {
     return (
         <div className='my-Panneau'>
-            <p>Test Panneau</p>
+            <img src={Img_Propos} alt='Kasa' className='my-Img_Propos' />
         </div>
     )
 }

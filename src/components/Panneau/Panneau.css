@@ -1,4 +1,15 @@
 
 .my-Panneau {
-	background-color: blue;
+    display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	margin: 15px 0px;
+}
+
+.my-Img_Propos {
+	width: 70%;
+	border-radius: 25px;
 }
