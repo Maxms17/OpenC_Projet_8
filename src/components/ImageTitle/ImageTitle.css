@@ -1,0 +1,28 @@
+
+.my-ImageTitle {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+
+	margin: 15px 0px;
+}
+
+.my-Img_Accueil {
+	z-index: 1;
+	width: 70%;
+	border-radius: 25px;
+}
+
+.my-ImageTitle p {
+	height: -250px;
+	width: 70%;
+	z-index: 2;
+	color: #000;
+
+	font-size: 48px;
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+}
