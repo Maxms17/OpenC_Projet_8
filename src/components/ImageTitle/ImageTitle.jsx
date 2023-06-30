@@ -1,3 +1,4 @@
+import React from 'react';
 import './ImageTitle.css'
 import Img_Accueil from '../../assets/Img_Accueil.jpg'
 

@@ -1,12 +1,12 @@
 import React from "react";
 
-import ImageTitle from "./ImageTitle/ImageTitle";
+import ImagePropos from "./ImagePropos/ImagePropos";
 import Panneau from "./Panneau/Panneau";
 
 function BodyPropos (){
     return ( 
         <>
-        <ImageTitle />
+        <ImagePropos />
         <Panneau />
        </>
     )
