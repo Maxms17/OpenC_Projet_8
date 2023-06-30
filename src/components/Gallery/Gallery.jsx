@@ -4,7 +4,24 @@ import './Gallery.css'
 function Gallery() {
     return (
         <div className='my-Gallery'>
-            <p>Test Gallery</p>
+            <div className='carte'>
+                <p>Titre de la location</p>
+            </div>
+            <div className='carte'>
+                <p>Titre de la location</p>
+            </div>
+            <div className='carte'>
+                <p>Titre de la location</p>
+            </div>
+            <div className='carte'>
+                <p>Titre de la location</p>
+            </div>
+            <div className='carte'>
+                <p>Titre de la location</p>
+            </div>
+            <div className='carte'>
+                <p>Titre de la location</p>
+            </div>
         </div>
     )
 }
