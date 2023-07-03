@@ -10,7 +10,7 @@
 	margin: 30px 0px;
 }
 
-button {
+.menu {
 	width: 1023px;
 	text-align: left;
 	background-color: #ff6060;
@@ -34,7 +34,7 @@ button {
 	margin: 0px 0px 30px 0px;
 }
 
-.menu {
+.sous-menu {
 	width: 1023px;
 	background-color: lightgray;
 	color: #ff6060;
@@ -46,15 +46,15 @@ button {
 	border-radius: 5px;
 }
   
-.menu > li {
+.sous-menu > li {
 	margin: 0;
 }
   
-.menu > li:hover {
+.sous-menu > li:hover {
 	margin: 0;
 }
   
-.menu > li > p {
+.sous-menu > li > p {
 	width: 1023px;
 	text-align: left;
 	color: #ff6060;
