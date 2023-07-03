@@ -1,5 +1,6 @@
 
-.my-ImageTitle {
+.my-ImageBanner {
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 	text-align: center;
@@ -14,12 +15,21 @@
 	border-radius: 25px;
 }
 
-.my-ImageTitle p {
-	width: 70%;
-	color: #000;
+.my-ImageText {
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 
+.my-ImageBanner p {
+	color: #FFF;
 	font-size: 48px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500;
+	line-height: 142.6%; 
 }
+
+
+  

@@ -3,9 +3,9 @@ import './ImageBanner.css'
 
 function ImageBanner({src, para}) {
     return (
-        <div className='my-ImageTitle'>
+        <div className='my-ImageBanner'>
             <img src={src} alt='Kasa' className='my-Img_Accueil' />
-            {para && <p>{para}</p>}
+            {para && <p className='my-ImageText'>{para}</p>}
         </div>
     )
 }
