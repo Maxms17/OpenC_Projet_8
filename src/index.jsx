@@ -12,7 +12,7 @@ ReactDOM.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/logement/{id}" element={<Logement />} /> {/* id pour trouver le logement a montrer */}
+        <Route path="/logement/:id" element={<Logement />} /> {/* id pour trouver le logement a montrer */}
         <Route path="/propos" element={<Propos />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
