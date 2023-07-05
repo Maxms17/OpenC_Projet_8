@@ -1,10 +1,22 @@
 import React from "react"
 import Layout from "../../components/Layout"
+//import Carrousel from "../../components/Carrousel/Carrousel"
+//import Info from "../../components/Info/Info"
 
-function Logement() {
+//import Data from '../../data.json'; // Importe les données depuis le fichier JSON
+
+function Logement({Data}) {
     return (
         <Layout>
-            <p>Page Logement</p>
+            {/*
+                        
+            {Data.map((datas) => (
+                <Carrousel image={datas.cover}/>
+                <p>{datas.title}</p>
+                <Info />
+            ))}
+
+            */}
         </Layout>
     )
 }

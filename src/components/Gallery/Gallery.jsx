@@ -11,7 +11,7 @@ function Gallery() {
         <div className="my-Gallery">
             {limitedData.map((datas) => (
                 <Link to={`/logement/${datas.id}`} key={datas.id} className='carte'>
-                    <p>{datas.title}</p>
+                  <p>{datas.title}</p>
                 </Link>
             ))}
         </div>

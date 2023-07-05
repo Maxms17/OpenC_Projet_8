@@ -16,25 +16,19 @@ const MyComponent = ({ datas }) => {
       <div className="my-dropdown">
         <div className="menu">
           <div className="arrow-container" onClick={handleArrowClick}>
-            {isExpanded ? (
-              <div className="title-container">
-                <p>{datas.title}</p>
-                <img src={Image} alt="Arrow" className="arrow-image" />
-              </div>
-              
-            ) : (
-              <div className="title-container">
-                <p>{datas.title}</p>
-                <img src={Image} alt="Arrow" className="arrow-image" />
-              </div>
-            )}
+            <div className="title-container">
+              <p>{datas.title}</p>
+              <img
+                src={Image}
+                alt="Arrow"
+                className={`arrow-image ${isExpanded ? 'rotated' : ''}`}
+              />
+            </div>
           </div>
         </div>
-        {isExpanded && (
-          <div className="sous-menu">
-            <p>{datas.para}</p>
-          </div>
-        )}
+        <div className={`sous-menu ${isExpanded ? 'expanded' : ''}`}>
+          <p>{datas.para}</p>
+        </div>
       </div>
     </>
   );
