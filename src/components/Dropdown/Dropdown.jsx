@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Dropdown from '../Dropdown/Dropdown';
+
+import Image from '../../assets/Vectorfleche.svg'
 
 import './Dropdown.css'
 
@@ -11,20 +12,31 @@ const MyComponent = ({ datas }) => {
   };
 
   return (
-    <div className='my-dropdown'>
-      <div className='menu'>
-        <p>{datas.title}</p>
-        <span onClick={handleArrowClick} style={{ cursor: 'pointer' }}>
-          {isExpanded ? '▲' : '▼'}
-        </span>
-      </div>
-      {isExpanded && (
-        <div className='sous-menu'>
-          <p>{datas.para}</p>
-          <Dropdown datas={datas} />
+    <>
+      <div className="my-dropdown">
+        <div className="menu">
+          <div className="arrow-container" onClick={handleArrowClick}>
+            {isExpanded ? (
+              <div className="title-container">
+                <p>{datas.title}</p>
+                <img src={Image} alt="Arrow" className="arrow-image" />
+              </div>
+              
+            ) : (
+              <div className="title-container">
+                <p>{datas.title}</p>
+                <img src={Image} alt="Arrow" className="arrow-image" />
+              </div>
+            )}
+          </div>
         </div>
-      )}
-    </div>
+        {isExpanded && (
+          <div className="sous-menu">
+            <p>{datas.para}</p>
+          </div>
+        )}
+      </div>
+    </>
   );
 };
 

@@ -3,46 +3,41 @@
     display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	text-align: center;
 	align-items: center;
-	justify-content: center;
 
 	margin: 30px 0px;
 }
 
 .menu {
 	width: 1023px;
-	text-align: left;
 	background-color: #ff6060;
-	color: #fff;
 	border: 1px solid #ff6060;
 	border-radius: 5px;
-	padding: 10px 20px 10px 15px;
 	font-size: 24px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500; 
 }
 
-.my-dropdown .menu-open {
-	display: block;
-	margin: 0px 0px 0px 0px;
+.arrow-container {
+	margin: 0px 20px 0px 15px;
 }
 
-.my-dropdown .menu-close {
-	display: block;
-	margin: 0px 0px 30px 0px;
+.title-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
 
 .sous-menu {
 	width: 1023px;
-	background-color: lightgray;
-	color: #ff6060;
+	background-color: #F6F6F6;
 
 	list-style-type: none;
 	padding: 0;
 	margin: 0px 0px 30px 0px;
-	border: 1px solid lightgray;
+	border: 1px solid #F6F6F6;
 	border-radius: 5px;
 }
   
@@ -54,16 +49,13 @@
 	margin: 0;
 }
   
-.sous-menu > li > p {
-	width: 1023px;
+.sous-menu p {
+	width: auto;
 	text-align: left;
 	color: #ff6060;
 	font-size: 24px;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 500;
-	padding: 10px 20px 10px 15px;
-	margin: 0;
-	font: inherit;
-	cursor: pointer;
+	padding: 0px 20px 0px 15px;
 }

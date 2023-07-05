@@ -17,7 +17,9 @@ const MyComponent = () => {
 
     return (
         <div>
-          <Dropdown datas={datas} />
+          {datas.map((data, index) => (
+            <Dropdown key={index} datas={data} />
+          ))}
         </div>
     );
 
