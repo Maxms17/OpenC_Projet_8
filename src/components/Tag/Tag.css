@@ -1,4 +1,8 @@
 
-p{
-   margin: 0;
+.tag p{
+   color: #000
+}
+
+.etoile p{
+    color: #000
 }

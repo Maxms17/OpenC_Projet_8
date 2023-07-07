@@ -6,10 +6,10 @@ const Tag = ({ logement }) => {
 
     return (
         <div>
-            <div>
+            <div className='tag'>
                 <p>{logement.tags}</p>
             </div>
-            <div>
+            <div className='etoile'>
                 <p>{logement.rating}</p>
             </div>
         </div>
