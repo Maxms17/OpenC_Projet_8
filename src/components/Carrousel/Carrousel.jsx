@@ -1,27 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Info from "../../components/Info/Info";
+import Tag from "../../components/Tag/Tag";
+import DropDes from "../../components/DropDes/DropDes";
+import DropEqu from "../../components/DropEqu/DropEqu";
 
-import Image from '../../assets/Vectorfleche.svg'
+import Image from '../../assets/Vectorfleche.svg';
 
-import Data from '../../data.json'; // Importe les données depuis le fichier JSON
+import './Carrousel.css';
 
-import { useParams } from 'react-router-dom';
+const Carrousel = ({ logement }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-import './Carrousel.css'
+  const goToNextLogement = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % logement.length);
+  };
 
-const Carrousel = () => {
-    const { id } = useParams();
-  
-    // Recherche du logement correspondant dans les données en utilisant l'ID
-    const logement = Data.find((datas) => datas.id === id);
+  const goToPreviousLogement = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + logement.length) % logement.length);
+  };
 
-    return (
-        <div>
-            <img src={Image} alt="Arrow" className={`Image_fleche_Gauche`} />
-            <img src={logement.cover} alt="Arrow" className={`image-fond`} />
-            <img src={Image} alt="Arrow" className={`Image_fleche_Droite`} />
+  return (
+    <div>
+      <div className='carrousel'>
+        <img src={Image} alt="Arrow" className="Image_fleche_Gauche" onClick={goToPreviousLogement} />
+        <img src={logement.cover} alt="Logement" className="image-fond" />
+        <img src={Image} alt="Arrow" className="Image_fleche_Droite" onClick={goToNextLogement} />
+      </div>
+      <div>
+        <Info logement={logement} />
+        <Tag logement={logement} />
+        <div className='drop'>
+            <DropDes logement={logement} />
+            <DropEqu logement={logement} />
         </div>
-    );
-
-}
+      </div>
+    </div>
+  );
+};
 
 export default Carrousel;

@@ -1,16 +1,8 @@
 import React from 'react';
 
-import Data from '../../data.json'; // Importe les données depuis le fichier JSON
-
-import { useParams } from 'react-router-dom';
-
 import './Tag.css'
 
-const Tag = () => {
-    const { id } = useParams();
-  
-    // Recherche du logement correspondant dans les données en utilisant l'ID
-    const logement = Data.find((datas) => datas.id === id);
+const Tag = ({ logement }) => {
 
     return (
         <div>

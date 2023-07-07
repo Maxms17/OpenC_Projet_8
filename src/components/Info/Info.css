@@ -1,4 +1,50 @@
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 15%;
+    padding: 0px;
+    width: 70%;
+}
 
-p{
-    color:black;
+.tilte{
+    display: block;
+}
+
+.tilte p{
+    float: left;
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500; 
+}
+
+.tilte h1{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500; 
+}
+
+.host{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.host p{
+    color: #FF6060;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500; 
+    margin: 0;
+}
+
+.host img{
+    width: 50%;
+    height: 90%; 
+    border-radius: 50%;
 }

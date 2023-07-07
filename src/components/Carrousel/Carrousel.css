@@ -1,4 +1,27 @@
 
-p{
-    color:black;
+.carrousel {
+    margin: 0px;
+}
+
+.Image_fleche_Gauche {
+
+}
+
+.Image_fleche_Droite {
+
+}
+
+.image-fond {
+    margin: 0 15%;
+    width: 70%;
+    height: 415px; 
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.drop {
+    margin: 0 15%;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
