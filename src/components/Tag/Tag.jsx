@@ -4,9 +4,9 @@ import Data from '../../data.json'; // Importe les données depuis le fichier JS
 
 import { useParams } from 'react-router-dom';
 
-import './Info.css'
+import './Tag.css'
 
-const Info = () => {
+const Tag = () => {
     const { id } = useParams();
   
     // Recherche du logement correspondant dans les données en utilisant l'ID
@@ -15,18 +15,14 @@ const Info = () => {
     return (
         <div>
             <div>
-                <h1>{logement.title}</h1>
-                <p>{logement.location}</p>
+                <p>{logement.tags}</p>
             </div>
             <div>
-                <p>{logement.host.name}</p>
-            </div>
-            <div>
-                <img src={logement.host.picture} alt="Host Picture" />
+                <p>{logement.rating}</p>
             </div>
         </div>
     );
 
 }
 
-export default Info;
+export default Tag;
