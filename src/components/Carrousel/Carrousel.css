@@ -1,14 +1,40 @@
 
 .carrousel {
-    margin: 0px;
+    margin: 0;
+    position: relative;
 }
 
-.Image_fleche_Gauche {
-    background-color: black;
+.numerisation {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+}
+  
+.numerisation p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500; 
 }
 
+.Image_fleche_Gauche,
 .Image_fleche_Droite {
-    background-color: black;
+    width: 5%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.Image_fleche_Gauche {
+    left: 18%;
+    transform: rotate(-90deg);
+}
+  
+.Image_fleche_Droite {
+    right: 18%;
+    transform: rotate(90deg);
 }
 
 .image-fond {

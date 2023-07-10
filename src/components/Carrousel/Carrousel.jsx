@@ -16,20 +16,27 @@ const Carrousel = ({ logement }) => {
     }
   }, [currentIndex, logement.pictures]);
 
-  const goToNextLogement = () => {
+  const NextImage = () => {
     setCurrentIndex(currentIndex + 1);
   };
 
-  const goToPreviousLogement = () => {
+  const PrevImage = () => {
     setCurrentIndex(currentIndex - 1);
   };
 
   return (
     <div>
       <div className='carrousel'>
-        <img src={Image} alt="Arrow" className="Image_fleche_Gauche" onClick={goToPreviousLogement} />
-        <img src={logement.pictures[currentIndex]} alt="Logement" className="image-fond" />
-        <img src={Image} alt="Arrow" className="Image_fleche_Droite" onClick={goToNextLogement} />
+        <div className='numerisation'>
+          <p className='numerisation-texte'>
+            {currentIndex + 1} / {logement.pictures.length}
+          </p>
+        </div>
+        <div className="container">
+          <img src={logement.pictures[currentIndex]} alt="Logement" className="image-fond" />
+          <img src={Image} alt="Arrow" className="Image_fleche_Gauche" onClick={PrevImage} />
+          <img src={Image} alt="Arrow" className="Image_fleche_Droite" onClick={NextImage} />
+        </div>
       </div>
     </div>
   );
