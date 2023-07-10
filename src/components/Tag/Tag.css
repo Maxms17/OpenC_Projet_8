@@ -1,8 +1,48 @@
-
-.tag p{
-   color: #000
+.conteneur {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 15%;
 }
 
-.etoile p{
-    color: #000
+.tag {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.tag_name {
+    border-radius: 10px;
+    background: #FF6060; 
+    padding: 5px;
+}
+
+.tag p{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500; 
+}
+
+.etoile {
+    align-items: center;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+.etoile_plein {
+    display: flex;
+    gap: 10px;
+    color: #FF6060;
+    height: 25px;
+}
+
+.etoile_vide {
+    display: flex;
+    gap: 10px;
+    color: #F6F6F6; 
+    height: 25px;
 }

@@ -19,38 +19,3 @@ function Gallery() {
 }
 
 export default Gallery
-
-/*
-import React, { useState, useEffect } from 'react';
-import './Gallery.css';
-
-function Gallery() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('../../../data.json'); // Chemin vers ton fichier JSON
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.log('Erreur lors du chargement des données :', error);
-      }
-    };
-
-    fetchData();
-  }, []);
-
-  return (
-    <div className="my-Gallery">
-      {data.map((datas) => (
-        <div className='carte' key={datas.id}>
-          <p>{datas.title}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-export default Gallery;
-*/

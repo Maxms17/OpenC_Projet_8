@@ -1,8 +1,4 @@
-import React, { useState } from 'react';
-import Info from "../../components/Info/Info";
-import Tag from "../../components/Tag/Tag";
-import DropDes from "../../components/DropDes/DropDes";
-import DropEqu from "../../components/DropEqu/DropEqu";
+import React, { useState, useEffect } from 'react'
 
 import Image from '../../assets/Vectorfleche.svg';
 
@@ -11,28 +7,29 @@ import './Carrousel.css';
 const Carrousel = ({ logement }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  useEffect(() => {
+    const lastIndex = logement.pictures.length - 1;
+    if (currentIndex < 0) {
+      setCurrentIndex(lastIndex);
+    } else if (currentIndex > lastIndex) {
+      setCurrentIndex(0);
+    }
+  }, [currentIndex, logement.pictures]);
+
   const goToNextLogement = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % logement.length);
+    setCurrentIndex(currentIndex + 1);
   };
 
   const goToPreviousLogement = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + logement.length) % logement.length);
+    setCurrentIndex(currentIndex - 1);
   };
 
   return (
     <div>
       <div className='carrousel'>
         <img src={Image} alt="Arrow" className="Image_fleche_Gauche" onClick={goToPreviousLogement} />
-        <img src={logement.cover} alt="Logement" className="image-fond" />
+        <img src={logement.pictures[currentIndex]} alt="Logement" className="image-fond" />
         <img src={Image} alt="Arrow" className="Image_fleche_Droite" onClick={goToNextLogement} />
-      </div>
-      <div>
-        <Info logement={logement} />
-        <Tag logement={logement} />
-        <div className='drop'>
-            <DropDes logement={logement} />
-            <DropEqu logement={logement} />
-        </div>
       </div>
     </div>
   );

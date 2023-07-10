@@ -4,7 +4,7 @@ import Image from '../../assets/Vectorfleche.svg'
 
 import './Dropdown.css'
 
-const MyComponent = ({ datas }) => {
+const MyComponent = ({ title, para }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleArrowClick = () => {
@@ -17,7 +17,7 @@ const MyComponent = ({ datas }) => {
         <div className="menu">
           <div className="arrow-container" onClick={handleArrowClick}>
             <div className="title-container">
-              <p>{datas.title}</p>
+              <p>{title}</p>
               <img
                 src={Image}
                 alt="Arrow"
@@ -26,9 +26,17 @@ const MyComponent = ({ datas }) => {
             </div>
           </div>
         </div>
-        <div className={`sous-menu ${isExpanded ? 'expanded' : ''}`}>
-          <p>{datas.para}</p>
-        </div>
+        {isExpanded && (
+           <div className={`sous-menu ${isExpanded ? 'expanded' : ''}`}>
+            {Array.isArray(para) ? (
+              para.map((item, index) => (
+                <p key={index}>{item}</p>
+              ))
+            ) : (
+              <p>{para}</p>
+            )}
+          </div>
+        )}
       </div>
     </>
   );
