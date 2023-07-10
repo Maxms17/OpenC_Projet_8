@@ -7,6 +7,8 @@ import './Carrousel.css';
 const Carrousel = ({ logement }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  const testnumerisation = logement.pictures.length > 1;
+
   useEffect(() => {
     const lastIndex = logement.pictures.length - 1;
     if (currentIndex < 0) {
@@ -27,15 +29,19 @@ const Carrousel = ({ logement }) => {
   return (
     <div>
       <div className='carrousel'>
-        <div className='numerisation'>
-          <p className='numerisation-texte'>
-            {currentIndex + 1} / {logement.pictures.length}
-          </p>
-        </div>
+        {testnumerisation && (
+          <div className='numerisation'>
+            <p>{currentIndex + 1} / {logement.pictures.length}</p>
+          </div>
+        )}
         <div className="container">
-          <img src={logement.pictures[currentIndex]} alt="Logement" className="image-fond" />
-          <img src={Image} alt="Arrow" className="Image_fleche_Gauche" onClick={PrevImage} />
-          <img src={Image} alt="Arrow" className="Image_fleche_Droite" onClick={NextImage} />
+        <img src={logement.pictures[currentIndex]} alt='Logement' className='image-fond' />
+          {testnumerisation && (
+            <>
+              <img src={Image} alt='Arrow' className='Image_fleche_Gauche' onClick={PrevImage} />
+              <img src={Image} alt='Arrow' className='Image_fleche_Droite' onClick={NextImage} />
+            </>
+          )}
         </div>
       </div>
     </div>
