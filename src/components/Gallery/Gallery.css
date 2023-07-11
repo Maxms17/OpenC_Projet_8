@@ -32,7 +32,7 @@
 	border-radius: 10px;
 
 	display: block;
-	width: calc(30.33% - 10px); /* Ajuste la largeur pour afficher maximum 3 cartes par ligne avec un espace de 10px entre les cartes */
+	width: calc(30.33% - 10px); /* Ajuste la largeur pour afficher maximum 3 cartes par ligne */
 	flex-direction: column;
 	justify-content: flex-end; 
 }

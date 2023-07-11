@@ -24,7 +24,7 @@ function Logement() {
   return (
     <Layout>
       <div key={logement.id}>
-        <Carrousel logement={logement} /> {/* Passer les données logement au composant Carrousel */}
+        <Carrousel logement={logement} />
         <Info logement={logement} />
         <Tag logement={logement} />
         <div className='drop'>
