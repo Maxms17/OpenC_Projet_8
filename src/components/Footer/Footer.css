@@ -21,3 +21,61 @@ p {
 	font-family: Montserrat;
 	font-weight: 500;
 }
+
+/* Responsive */
+
+@media (max-width: 1480px) {
+	.my-logo_blanc {
+		width: 115px;
+		height: 38px;
+	}
+	.my-footer{
+		gap: 28px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 1080px) {
+	.my-logo_blanc {
+		width: 115px;
+		height: 38px;
+	}
+	.my-footer{
+		gap: 22px;
+	}
+	p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 780px) {
+	.my-logo_blanc {
+		width: 115px;
+		height: 38px;
+	}
+	.my-footer{
+		gap: 20px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 480px) {
+	.my-logo_blanc {
+		width: 115px;
+		height: 38px;
+	}
+	.my-footer{
+		gap: 18px;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 500;
+	}
+}

@@ -27,9 +27,35 @@
 	font-size: 48px;
 	font-family: Montserrat;
 	font-style: normal;
-	font-weight: 500;
-	line-height: 142.6%; 
+	font-weight: 500; 
 }
 
+/* Responsive */
 
-  
+@media (max-width: 1480px) {
+	.my-ImageBanner p {
+		font-size: 40px;
+		font-weight: 500; 
+	}
+}
+
+@media (max-width: 1080px) {
+	.my-ImageBanner p {
+		font-size: 30px;
+		font-weight: 500; 
+	}
+}
+
+@media (max-width: 780px) {
+	.my-ImageBanner p {
+		font-size: 20px;
+		font-weight: 300; 
+	}
+}
+
+@media (max-width: 480px) {
+	.my-ImageBanner p {
+		font-size: 12px;
+		font-weight: 300; 
+	}
+}

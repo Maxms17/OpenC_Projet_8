@@ -51,12 +51,10 @@
 	height: 0;
 	opacity: 0;
 	overflow: hidden;
-	animation-name: expandMenu;
-	animation-duration: 0.3s;
-	animation-timing-function: ease;
+	transition: height 3s ease-in-out, opacity 3s ease-in-out;
 }
 
-.sous-menu.expanded {
+.expanded {
 	height: auto;
 	opacity: 1;
 }
@@ -72,13 +70,20 @@
 	padding: 0px 20px 0px 15px;
 }
 
-@keyframes expandMenu {
-	0% {
-	  height: 0;
-	  opacity: 0;
-	}
-	100% {
-	  height: auto;
-	  opacity: 1;
-	}
+/* Responsive */
+
+@media (max-width: 1480px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 780px) {
+
+}
+
+@media (max-width: 480px) {
+
 }

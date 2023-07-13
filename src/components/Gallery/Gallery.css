@@ -54,3 +54,53 @@
 a:hover {
 	text-decoration: none;
 }
+
+/* Responsive */
+
+@media (max-width: 1480px) {
+	.image-container {
+		height: 260px; 
+	}
+	.carte p {
+		top: 80%;
+		padding: 10px;
+		font-size: 18px;
+		font-weight: 500;
+	}
+}
+
+@media (max-width: 1080px) {
+	.image-container {
+		height: 200px; 
+	}
+	.carte p {
+		top: 60%;
+		padding: 10px;
+		font-size: 14px;
+		font-weight: 300;
+	}
+}
+
+@media (max-width: 780px) {
+	.image-container {
+		height: 120px; 
+	}
+	.carte p {
+		top: 40%;
+		padding: 10px;
+		font-size: 12px;
+		font-weight: 300;
+	}
+}
+
+@media (max-width: 480px) {
+	.image-container {
+		height: 80px; 
+	}
+	.carte p {
+		top: 30%;
+		padding: 4px;
+		font-size: 10px;
+		font-weight: 300;
+	}
+}
