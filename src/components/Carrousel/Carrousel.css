@@ -51,3 +51,29 @@
     display: flex;
     justify-content: space-between;
 }
+
+/* Responsive */
+
+@media (max-width: 1480px) {
+    .image-fond {
+        height: 415px; 
+    }
+}
+
+@media (max-width: 1080px) {
+    .image-fond {
+        height: 375px; 
+    }
+}
+
+@media (max-width: 780px) {
+    .image-fond {
+        height: 315px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .image-fond {
+        height: 215px; 
+    }
+}

@@ -81,6 +81,10 @@
 		font-size: 24px;
 		font-weight: 500;
 	}
+	.title-container p {
+		font-size: 24px;
+		font-weight: 500;
+	}
 }
 
 @media (max-width: 1080px) {
@@ -89,6 +93,10 @@
 		font-weight: 500; 
 	}
 	.sous-menu p {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.title-container p {
 		font-size: 20px;
 		font-weight: 500;
 	}
@@ -103,6 +111,10 @@
 		font-size: 16px;
 		font-weight: 500;
 	}
+	.title-container p {
+		font-size: 15px;
+		font-weight: 500;
+	}
 }
 
 @media (max-width: 480px) {
@@ -111,6 +123,10 @@
 		font-weight: 500; 
 	}
 	.sous-menu p {
+		font-size: 12px;
+		font-weight: 500;
+	}
+	.title-container p {
 		font-size: 12px;
 		font-weight: 500;
 	}
