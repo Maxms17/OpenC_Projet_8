@@ -73,17 +73,45 @@
 /* Responsive */
 
 @media (max-width: 1480px) {
-
+	.menu {
+		font-size: 24px;
+		font-weight: 500; 
+	}
+	.sous-menu p {
+		font-size: 24px;
+		font-weight: 500;
+	}
 }
 
 @media (max-width: 1080px) {
-
+	.menu {
+		font-size: 20px;
+		font-weight: 500; 
+	}
+	.sous-menu p {
+		font-size: 20px;
+		font-weight: 500;
+	}
 }
 
 @media (max-width: 780px) {
-
+	.menu {
+		font-size: 16px;
+		font-weight: 500; 
+	}
+	.sous-menu p {
+		font-size: 16px;
+		font-weight: 500;
+	}
 }
 
 @media (max-width: 480px) {
-
+	.menu {
+		font-size: 12px;
+		font-weight: 500; 
+	}
+	.sous-menu p {
+		font-size: 12px;
+		font-weight: 500;
+	}
 }
