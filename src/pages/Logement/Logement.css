@@ -1,6 +1,7 @@
 
 .drop {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     gap: 30px;
 }
@@ -21,12 +22,14 @@
 
 @media (max-width: 780px) {
     .drop {
-        gap: 20px;
+        gap: 10px;
+        flex-direction: column;
     }
 }
 
 @media (max-width: 480px) {
     .drop {
-        gap: 15px;
+        gap: 10px;
+        flex-direction: column;
     }
 }

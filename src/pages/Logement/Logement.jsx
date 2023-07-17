@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../../components/Layout";
 import Carrousel from "../../components/Carrousel/Carrousel";
 import Info from "../../components/Info/Info";
-import Tag from "../../components/Tag/Tag";
 import Dropdown from '../../components/Dropdown/Dropdown';
 
 import Data from '../../data.json'; // Importe les données depuis le fichier JSON
@@ -28,7 +27,6 @@ function Logement() {
       <div key={logement.id}>
         <Carrousel logement={logement} />
         <Info logement={logement} />
-        <Tag logement={logement} />
         <div className='drop'>
           <Dropdown title={'Description'} para={logement.description}/>
           <Dropdown title={'Equipement'} para={logement.equipments}/>
