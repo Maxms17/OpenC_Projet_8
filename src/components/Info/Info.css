@@ -55,38 +55,29 @@
 /* Responsive */
 
 @media (max-width: 1480px) {
-    .tilte p{
+    .info p {
         font-size: 16px;
     }
     .tilte h1{
         font-size: 32px;
     }
-    .host p{
-        font-size: 16px;
-    }
 }
 
 @media (max-width: 1080px) {
-    .tilte p{
-        font-size: 16px;
+    .info p {
+        font-size: 14px;
     }
     .tilte h1{
-        font-size: 28px;
-    }
-    .host p{
-        font-size: 14px;
+        font-size: 24px;
     }
 }
 
 @media (max-width: 780px) {
-    .tilte p{
+    .info p {
         font-size: 14px;
     }
     .tilte h1{
         font-size: 22px;
-    }
-    .host p{
-        font-size: 14px;
     }
     .host img{
         width: 35%;
@@ -95,14 +86,11 @@
 }
 
 @media (max-width: 480px) {
-    .tilte p{
+    .info p {
         font-size: 12px;
     }
     .tilte h1{
         font-size: 20px;
-    }
-    .host p{
-        font-size: 12px;
     }
     .host img{
         width: 35%;

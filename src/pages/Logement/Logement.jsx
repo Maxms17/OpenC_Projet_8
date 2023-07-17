@@ -7,18 +7,20 @@ import Dropdown from '../../components/Dropdown/Dropdown';
 
 import Data from '../../data.json'; // Importe les données depuis le fichier JSON
 
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import './Logement.css'
 
 function Logement() {
   const { id } = useParams();
+  const navigate = useNavigate();
 
   // Recherche du logement correspondant dans les données en utilisant l'ID
   const logement = Data.find((datas) => datas.id === id);
 
   if (!logement) {
-    // Gérer le cas où le logement n'est pas trouvé
-    return <div><p>Logement introuvable</p></div>;
+    // Rediriger vers la page d'erreur lorsque le logement n'est pas trouvé
+    navigate.push("*");
+    return null; // Vous pouvez également renvoyer un composant d'erreur ici directement.
   }
 
   return (

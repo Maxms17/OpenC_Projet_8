@@ -26,17 +26,15 @@ const MyComponent = ({ title, para }) => {
             </div>
           </div>
         </div>
-        {isExpanded && (
-           <div className={`sous-menu ${isExpanded ? 'expanded' : ''}`}>
-            {Array.isArray(para) ? (
-              para.map((item, index) => (
-                <p key={index}>{item}</p>
-              ))
-            ) : (
-              <p>{para}</p>
-            )}
-          </div>
-        )}
+         <div className={`sous-menu ${isExpanded ? 'expanded' : ''}`}>
+          {Array.isArray(para) ? (
+            para.map((item, index) => (
+              <p key={index}>{item}</p>
+            ))
+          ) : (
+            <p>{para}</p>
+          )}
+        </div>
       </div>
     </>
   );

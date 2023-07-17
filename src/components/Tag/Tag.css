@@ -54,10 +54,7 @@
     .tag p{
         font-size: 14px;
     }
-    .etoile_plein {
-        gap: 10px;
-        height: 25px;
-    }
+    .etoile_plein,
     .etoile_vide {
         gap: 10px;
         height: 25px;
@@ -68,10 +65,7 @@
     .tag p{
         font-size: 14px;
     }
-    .etoile_plein {
-        gap: 10px;
-        height: 25px;
-    }
+    .etoile_plein,
     .etoile_vide {
         gap: 10px;
         height: 25px;
@@ -82,10 +76,7 @@
     .tag p{
         font-size: 12px;
     }
-    .etoile_plein {
-        gap: 5px;
-        height: 15px;
-    }
+    .etoile_plein,
     .etoile_vide {
         gap: 5px;
         height: 15px;
@@ -96,10 +87,7 @@
     .tag p{
         font-size: 10px;
     }
-    .etoile_plein {
-        gap: 5px;
-        height: 15px;
-    }
+    .etoile_plein,
     .etoile_vide {
         gap: 5px;
         height: 15px;
