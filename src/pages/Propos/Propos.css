@@ -1,8 +1,14 @@
 body {
+    min-height: 100vh;
     margin: 0;
 }
 
 .panneau {
     width: 70%;
     margin: 0 15%;
+}
+
+.my-ImageBanner img{
+    height: 220px;
+    object-fit: cover;
 }

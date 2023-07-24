@@ -76,6 +76,9 @@ a:hover {
 }
 
 @media (max-width: 480px) {
+	.my-header {
+		margin: 25px 25px 20px 25px;
+	}
 	.my-logo {
 		height: 38px;
 		width: 118px;

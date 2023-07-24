@@ -1,3 +1,6 @@
+body {
+    min-height: 100vh;
+}
 
 .Erreur-404 p {
     color: #FF6060;

@@ -21,6 +21,7 @@
 
 .Image_fleche_Gauche,
 .Image_fleche_Droite {
+    cursor: pointer;
     width: 5%;
     position: absolute;
     top: 50%;
@@ -35,6 +36,10 @@
 .Image_fleche_Droite {
     right: 18%;
     transform: rotate(90deg);
+}
+
+.container {
+    min-height: 415px;
 }
 
 .image-fond {
