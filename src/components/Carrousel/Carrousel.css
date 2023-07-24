@@ -63,11 +63,17 @@
     .image-fond {
         height: 415px; 
     }
+    .container {
+        min-height: 415px;
+    }
 }
 
 @media (max-width: 1080px) {
     .image-fond {
         height: 375px; 
+    }
+    .container {
+        min-height: 375px;
     }
 }
 
@@ -75,10 +81,16 @@
     .image-fond {
         height: 315px; 
     }
+    .container {
+        min-height: 315px;
+    }
 }
 
 @media (max-width: 480px) {
     .image-fond {
         height: 215px; 
+    }
+    .container {
+        min-height: 215px;
     }
 }
