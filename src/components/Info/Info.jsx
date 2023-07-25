@@ -30,12 +30,16 @@ const Info = ({ logement }) => {
        
         <div className='tag'>
           {Array.isArray(logement.tags) ? (
-            logement.tags.map((item, index) => (
-              <div  className='tag_name'><p key={index}>{item}</p></div>
+            logement.tags.map((tag, index) => (
+              <div className='tag_name' key={index}>
+                <p>{tag}</p>
+              </div>
             ))
-            ) : (
-              <div className='tag_name'><p>{logement.tags}</p></div>
-            )}
+          ) : (
+            <div className='tag_name'>
+              <p>{logement.tags}</p>
+            </div>
+          )}
         </div>
 
       </div>
