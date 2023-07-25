@@ -8,13 +8,13 @@ const Info = ({ logement }) => {
 
   const etoilepleine = () => {
     return Array.from({ length: logement.rating }, (_, index) => (
-      <FontAwesomeIcon icon={faStar} />
+      <FontAwesomeIcon key={index} icon={faStar} />
     ));
   };
 
   const etoilevide = () => {
     return Array.from({ length: 5 - logement.rating }, (_, index) => (
-      <FontAwesomeIcon icon={faStar} />
+      <FontAwesomeIcon key={index} icon={faStar} />
     ));
   };
 
