@@ -12,6 +12,10 @@ nav{
 	gap: 60px;
 }
 
+.active-link {
+	text-decoration: underline;
+}
+
 a {
 	text-decoration: none;
 	color: #FF6060;
@@ -72,6 +76,7 @@ a:hover {
 	}
 	a {
 		font-size: 18px;
+		text-transform: uppercase;
 	}
 }
 
@@ -88,5 +93,6 @@ a:hover {
 	}
 	a {
 		font-size: 14px;
+		text-transform: uppercase;
 	}
 }

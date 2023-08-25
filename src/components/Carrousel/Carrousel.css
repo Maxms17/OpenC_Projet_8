@@ -8,6 +8,7 @@
     position: absolute;
     top: 80%;
     left: 50%;
+    display: block;
 }
   
 .numerisation p {
@@ -84,6 +85,9 @@
     .container {
         min-height: 315px;
     }
+    .numerisation {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -92,5 +96,8 @@
     }
     .container {
         min-height: 215px;
+    }
+    .numerisation {
+        display: none;
     }
 }
